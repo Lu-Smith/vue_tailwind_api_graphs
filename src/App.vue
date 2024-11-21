@@ -1,8 +1,13 @@
 <script setup lang="ts">
+  import GraphGrids from './components/GraphGrids.vue';
+  import Header from './components/Header.vue';
+  import Footer from './components/Footer.vue';
 </script>
 
 <template>
-  <h1 class="text-3xl font-bold underline">Graphs</h1>
+  <Header />
+  <GraphGrids />
+  <Footer />
 </template>
 
 <style scoped>
