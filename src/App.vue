@@ -15,7 +15,7 @@
     try {
       const respnse = await axios.get(URL.value);
       pokemonData.value = respnse.data;
-      console.log("Fetched Pokémon:", pokemonData.value);
+      console.log(pokemonData.value);
     } catch (err) {
       console.console.error("Error fetching Pokemon data: ", err);
       pokemonData.value = null;
@@ -37,6 +37,6 @@
     <button type="submit">Submit</button>
   </form>
   <p>{{ pokemonName }}</p>
-  <GraphGrids :pokemonName="pokemonName" />
+  <GraphGrids :pokemonData="pokemonData"/> 
   <Footer />
 </template>
